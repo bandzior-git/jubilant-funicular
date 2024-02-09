@@ -38,7 +38,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
         
 
     # Authentication via credentials json
@@ -49,13 +49,13 @@ jobs:
         credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
     - name: Set Project
-      uses: google-github-actions/setup-gcloud@v0
+      uses: google-github-actions/setup-gcloud@v2
       with:
         project_id: ${{ env.PROJECT_ID }}
         # Get the GKE credentials so we can deploy to the cluster
         
     - name: Set up GKE credentials
-      uses: google-github-actions/get-gke-credentials@v0
+      uses: google-github-actions/get-gke-credentials@v2
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
@@ -68,5 +68,19 @@ jobs:
     - name: Configure Docker authentication for cloud
       run: |-
         gcloud --quiet auth configure-docker
+    
+    - name: Build Docker image
+      run: |-
+        docker build -t bandzior/site-k8s:latest -t bandzior/site-k8s:${{ env.SHA }} -f ./site/Dockerfile .site
+    
+    - name: Push Docker image
+      run: |-
+        docker push bandzior/site-k8s:latest
+
+        docker push bandzior/site-k8s:${{ env.SHA }}
+
+    - name: Kubectl Apply
+      run: |-
+        kubectl apply -f k8s
     
 
