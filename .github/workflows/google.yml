@@ -71,7 +71,7 @@ jobs:
     
     - name: Build Docker image
       run: |-
-        docker build -t bandzior/site-k8s:latest -t bandzior/site-k8s:${{ env.SHA }} -f ./site/Dockerfile .site
+        docker build -t bandzior/site-k8s:latest -t bandzior/site-k8s:${{ env.SHA }} -f ./site/Dockerfile ./site
     
     - name: Push Docker image
       run: |-
