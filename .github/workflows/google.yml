@@ -81,6 +81,6 @@ jobs:
 
     - name: Kubectl Apply
       run: |-
-        kubectl apply -f k8s
+        kubectl apply -f infra/k8s
     
 
