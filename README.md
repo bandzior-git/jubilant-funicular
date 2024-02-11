@@ -30,3 +30,5 @@
   helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.14.2 --set installCRDs=true
 
 5. Deploy project using Github actions
+
+6.
