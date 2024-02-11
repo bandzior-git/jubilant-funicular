@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
     kubernetes.io/ingress.global-static-ip-name: web-ip
     cert-manager.io/issue-temporary-certificate: 'true'
-    acme.cert-manager.io/http01-edit-in-place: 'true'
+    # acme.cert-manager.io/http01-edit-in-place: 'true'
   labels:
     name: ingress
 spec:
