@@ -7,7 +7,8 @@ metadata:
     cert-manager.io/cluster-issuer: 'lets-encrypt-staging'
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
     kubernetes.io/ingress.global-static-ip-name: web-ip
-    cert-manager.io/http01-edit-in-place: 'true'
+    cert-manager.io/issue-temporary-certificate: 'true'
+    acme.cert-manager.io/http01-edit-in-place: 'true'
   labels:
     name: ingress
 spec:
