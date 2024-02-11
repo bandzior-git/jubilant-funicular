@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: websajt
   template:
     metadata:
       labels:
-        app: nginx
+        app: websajt
     spec:
       containers:
-        - name: nginx-static
-          image: bandzior/nginx-static
+        - name: site-k8s
+          image: bandzior/site-k8s
           resources:
             limits:
               memory: '2Gi'
