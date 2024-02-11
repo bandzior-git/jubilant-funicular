@@ -4,9 +4,15 @@ metadata:
   name: ingress-srv
   annotations:
     nginx.ingress.kubernetes.io/use-regex: 'true'
+    cert-manager.io/cluster-issuer: 'lets-encrypt-test'
+    nginx.ingress.kubernetes.io/ssl-redirect: 'true'
   labels:
     name: ingress
 spec:
+  tls:
+    - hosts:
+        - site.balcerski.eu
+      secretName: site-balcerski-eu
   ingressClassName: nginx
   rules:
     - http:
