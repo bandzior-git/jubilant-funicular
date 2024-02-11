@@ -1,0 +1,297 @@
+ 1076  kubectl config view
+ 1079  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1084  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1109  kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51OAtOvBwhRBntPf1WyNhzUQoWWzOs5fVaDV2fPIArnXvB7MQwa0G99nn1NU5ClWtAxb7JxvChIek96bysar8AHm000z67WMWGg
+ 1110  kubectl get secrets
+ 1139  kubectl get secrets
+ 1226  kubectl get pods
+ 1230  kubectl get pods
+ 1254  kubectl get pods
+ 1259  kubectl get ingress
+ 1260  kubectl proxy --address='0.0.0.0' --disable-filter=true
+ 1761  kubectl get pods
+ 1762  kubectl context
+ 1763  kubectl get contexts
+ 1766  kubectl get pods
+ 1770  kubectl config get contexts
+ 1771  kubectl config get-contexts
+ 1773  kubectl get pods
+ 1774  kubectl get contexts
+ 1775  kubectl get context
+ 1776  kubectl history
+ 1780  kubectl config get-contexts
+ 1781  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1782  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1785  kubectl get pods
+ 1786  kubectl get namespace
+ 1787  kubectl context
+ 1788  kubectl config get-contexts
+ 1789  kubectl get pods
+ 1790  kubectl config get-contexts
+ 1791  kubectl config set-context minikube
+ 1792  kubectl config get-contexts
+ 1793  kubectl config set-context minikube
+ 1794  kubectl get pods
+ 1795  kubectl config use-context minikube
+ 1796  kubectl get pods
+ 1797  kubectl config get-contexts
+ 1817  kubectl config get-cluster
+ 1818  kubectl config get-clusters
+ 1819  kubectl config get-contexts
+ 1822  kubectl get context
+ 1823  kubectl config get-contexts
+ 1824  kubectl get pods
+ 1825  kubectl config get-contexts
+ 1826  kubectl config use-context gke_plated-will-413411_europe-central2-a_ticketing-bandzior
+ 1827  kubectl get pods
+ 1837  kubectl config get-contexts
+ 1839  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1840  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1855  kubectl config get-contexts
+ 1873  kubectl get limitrange -o=yaml.
+ 1874  kubectl get limitrange -o=yaml
+ 1875  kubectl get pods
+ 1876  kubectl describe node
+ 1878  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1879  kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51OAtOvBwhRBntPf1WyNhzUQoWWzOs5fVaDV2fPIArnXvB7MQwa0G99nn1NU5ClWtAxb7JxvChIek96bysar8AHm000z67WMWGg
+ 1880  kubectl describe nodes
+ 1886  kubectl get pods
+ 1888  kubectl proxy --port 8080
+ 1889  kubectl port-forward nginx-7c9c4654c4-5gsjm 28080:8080
+ 1890  kubectl get pods
+ 1891  kubectl port-forward nginx-7fd864b9c9-ksfpw 28080:8080
+ 1896  kubectl get pods
+ 1897  kubectl port-forward nginx-5467b5cbd9-vzs9m 28080:80
+ 1901  which kubectl
+ 1902  kubectl version
+ 1903  kubectl version --short
+ 1904  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 1905  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+ 1906  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+ 1907  chmod +x kubectl
+ 1908  which kubectl
+ 1909  mv kubectl /usr/local/bin/kubectl
+ 1910  sudo mv kubectl /usr/local/bin/kubectl
+ 1917  sudo apt-get install -y kubectl
+ 1918  kubectl version --client
+ 1919  kubectl version --short
+ 1923  which kubectl
+ 1925  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1926  kubectl version --short
+ 1927  kubectl version
+ 1930  kubectl get pods
+ 1931  kubectl version
+ 1932  kubectl version --short
+ 1935  kubectl version --short
+ 1936  kubectl version
+ 1937  kubectl get pods
+ 1939  kubectl port-forward nginx-74998bf7b8-8v4cd 28080:80 
+ 1940  kubectl get service
+ 1941  kubectl describe service nginx-srv
+ 1942  kubectl describe nginx
+ 1943  kubectl get pods
+ 1944  kubectl get ingress
+ 1945  kubectl describe ingress-srv
+ 1946  kubectl describe ingress ingress-srv
+ 1947  kubectl get pods
+ 1948  kubectl describe pod nginx-8574f7fdcd-svf4h
+ 1949  kubectl get services
+ 1950  kubectl describe service nginx-srv
+ 1951  kubectl describe ingress ingress-srv
+ 1971  kubectl config get-contexts
+ 1973  kubectl config get-contexts
+ 1974  kubectl config rename-context gke_plated-will-413411_europe-central2-a_ticketing-bandzior gke_context
+ 1975  kubectl config get-contexts
+ 1979  kubectl config get-contexts
+ 1980  kubectl config delete-context gke_context
+ 1981  kubectl config get-contexts
+ 1983  kubectl config get-contexts
+ 1985  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1986  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1988  kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.2/cert-manager.yaml
+ 1989  kubectl get pods -n cert-manager
+ 1990  kubectl get pods
+ 2007  kubectl cert-manager check
+ 2008  $ curl -L -o kubectl-cert-manager.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v1.0.4/kubectl-cert_manager-linux-amd64.tar.gz
+ 2009  $ tar xzf kubectl-cert-manager.tar.gz
+ 2010  $ sudo mv kubectl-cert_manager /usr/local/bin
+ 2011  curl -L -o kubectl-cert-manager.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v1.0.4/kubectl-cert_manager-linux-amd64.tar.gz
+ 2012  tar xzf kubectl-cert-manager.tar.gz
+ 2013  kubectl cert-manager help
+ 2014  kubectl cert-manager status
+ 2015  kubectl cert-manager status --cluster jubicular
+ 2016  kubectl get certificate
+ 2017  kubectl get certificaterequest
+ 2018  kubectl get certificate
+ 2019  kubectl describe certificaterequest tls-1
+ 2020  kubectl logs -l app=cert-manager,app.kubernetes.io/component=controller -n cert-manager
+ 2049  history | grep kubectl > kubectl_commands.txt
+ 1076  kubectl config view
+ 1079  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1084  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1109  kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51OAtOvBwhRBntPf1WyNhzUQoWWzOs5fVaDV2fPIArnXvB7MQwa0G99nn1NU5ClWtAxb7JxvChIek96bysar8AHm000z67WMWGg
+ 1110  kubectl get secrets
+ 1139  kubectl get secrets
+ 1226  kubectl get pods
+ 1230  kubectl get pods
+ 1254  kubectl get pods
+ 1259  kubectl get ingress
+ 1260  kubectl proxy --address='0.0.0.0' --disable-filter=true
+ 1761  kubectl get pods
+ 1762  kubectl context
+ 1763  kubectl get contexts
+ 1766  kubectl get pods
+ 1770  kubectl config get contexts
+ 1771  kubectl config get-contexts
+ 1773  kubectl get pods
+ 1774  kubectl get contexts
+ 1775  kubectl get context
+ 1776  kubectl history
+ 1780  kubectl config get-contexts
+ 1781  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1782  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1785  kubectl get pods
+ 1786  kubectl get namespace
+ 1787  kubectl context
+ 1788  kubectl config get-contexts
+ 1789  kubectl get pods
+ 1790  kubectl config get-contexts
+ 1791  kubectl config set-context minikube
+ 1792  kubectl config get-contexts
+ 1793  kubectl config set-context minikube
+ 1794  kubectl get pods
+ 1795  kubectl config use-context minikube
+ 1796  kubectl get pods
+ 1797  kubectl config get-contexts
+ 1817  kubectl config get-cluster
+ 1818  kubectl config get-clusters
+ 1819  kubectl config get-contexts
+ 1822  kubectl get context
+ 1823  kubectl config get-contexts
+ 1824  kubectl get pods
+ 1825  kubectl config get-contexts
+ 1826  kubectl config use-context gke_plated-will-413411_europe-central2-a_ticketing-bandzior
+ 1827  kubectl get pods
+ 1837  kubectl config get-contexts
+ 1839  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1840  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1855  kubectl config get-contexts
+ 1873  kubectl get limitrange -o=yaml.
+ 1874  kubectl get limitrange -o=yaml
+ 1875  kubectl get pods
+ 1876  kubectl describe node
+ 1878  kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+ 1879  kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51OAtOvBwhRBntPf1WyNhzUQoWWzOs5fVaDV2fPIArnXvB7MQwa0G99nn1NU5ClWtAxb7JxvChIek96bysar8AHm000z67WMWGg
+ 1880  kubectl describe nodes
+ 1886  kubectl get pods
+ 1888  kubectl proxy --port 8080
+ 1889  kubectl port-forward nginx-7c9c4654c4-5gsjm 28080:8080
+ 1890  kubectl get pods
+ 1891  kubectl port-forward nginx-7fd864b9c9-ksfpw 28080:8080
+ 1896  kubectl get pods
+ 1897  kubectl port-forward nginx-5467b5cbd9-vzs9m 28080:80
+ 1901  which kubectl
+ 1902  kubectl version
+ 1903  kubectl version --short
+ 1904  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 1905  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+ 1906  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+ 1907  chmod +x kubectl
+ 1908  which kubectl
+ 1909  mv kubectl /usr/local/bin/kubectl
+ 1910  sudo mv kubectl /usr/local/bin/kubectl
+ 1917  sudo apt-get install -y kubectl
+ 1918  kubectl version --client
+ 1919  kubectl version --short
+ 1923  which kubectl
+ 1925  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1926  kubectl version --short
+ 1927  kubectl version
+ 1930  kubectl get pods
+ 1931  kubectl version
+ 1932  kubectl version --short
+ 1935  kubectl version --short
+ 1936  kubectl version
+ 1937  kubectl get pods
+ 1939  kubectl port-forward nginx-74998bf7b8-8v4cd 28080:80 
+ 1940  kubectl get service
+ 1941  kubectl describe service nginx-srv
+ 1942  kubectl describe nginx
+ 1943  kubectl get pods
+ 1944  kubectl get ingress
+ 1945  kubectl describe ingress-srv
+ 1946  kubectl describe ingress ingress-srv
+ 1947  kubectl get pods
+ 1948  kubectl describe pod nginx-8574f7fdcd-svf4h
+ 1949  kubectl get services
+ 1950  kubectl describe service nginx-srv
+ 1951  kubectl describe ingress ingress-srv
+ 1971  kubectl config get-contexts
+ 1973  kubectl config get-contexts
+ 1974  kubectl config rename-context gke_plated-will-413411_europe-central2-a_ticketing-bandzior gke_context
+ 1975  kubectl config get-contexts
+ 1979  kubectl config get-contexts
+ 1980  kubectl config delete-context gke_context
+ 1981  kubectl config get-contexts
+ 1983  kubectl config get-contexts
+ 1985  kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin   --user $(gcloud config get-value account)
+ 1986  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1988  kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.2/cert-manager.yaml
+ 1989  kubectl get pods -n cert-manager
+ 1990  kubectl get pods
+ 1999  curl -L -o kubectl-cert-manager.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v1.0.4/kubectl-cert_manager-linux-amd64.tar.gz
+ 2000  tar xzf kubectl-cert-manager.tar.gz
+ 2001  sudo mv kubectl-cert_manager /usr/local/bin
+ 2007  kubectl describe issuers.cert-manager.io lets-encrypt-staging
+ 2008  kubectl describe clusterissuers.cert-manager.io lets-encrypt-staging
+ 2009  kubectl get certificate
+ 2010  kubectl gdelete certificate tls
+ 2011  kubectl delete certificate tls
+ 2012  kubectl get certificate
+ 2013  kubectl describe certificate web-ssl
+ 2014  kubectl get secrets
+ 2015  kubectl get certificate
+ 2016  kubectl describe certificate web-ssl
+ 2017  kubectl get secrets
+ 2018  kubectl delete secret web-ssl-qgkzd
+ 2019  kubectl get secrets
+ 2020  kubectl describe certificate web-ssl
+ 2021  kubectl delete certificate web-ssl
+ 2022  kubectl describe certificate web-ssl
+ 2023  kubectl describe certificaterequest web-ssl-1
+ 2024  kubectl get clusterissuer
+ 2025  kubectl delete clusterissuer lets-encrypt-test
+ 2026  kubectl get clusterissuer
+ 2027  kubectl delete clusterissuer lets-encrypt-staging
+ 2028  kubectl get clusterissuer
+ 2030  kubectl apply -f infra/k8s/cert-issuer-staging.yaml 
+ 2031  kubectl get clusterissuer
+ 2032  kubectl describe clusterissuer lets-encrypt-staging
+ 2033  kubectl describe order web-ssl-1-1178609210
+ 2034  kubectl describe challenge web-ssl-1-1178609210-1498826059
+ 2035  kubectl delete challenge web-ssl-1-1178609210-1498826059
+ 2036  kubectl describe challenge web-ssl-1-1178609210-1498826059
+ 2037  kubectl get pods -n cert-manager
+ 2038  kubectl delete pod -n cert-manager cert-manager-594b84b49d-fpz4q cert-manager-cainjector-9795f664f-bvkv2 cert-manager-webhook-64d9455f47-clftl
+ 2039  kubectl get pods -n cert-manager
+ 2040  kubectl get clusterissuer
+ 2041  kubectl describe clusterissuer lets-encrypt-staging
+ 2042  kubectl delete clusterissuer lets-encrypt-staging
+ 2043  kubectl apply -f infra/k8s/cert-issuer-staging.yaml 
+ 2044  kubectl describe clusterissuer lets-encrypt-staging
+ 2045  kubectl describe certificate web-ssl
+ 2046  kubectl describe certificaterequest web-ssl-1
+ 2047  kubectl describe order web-ssl-1-1178609210
+ 2048  kubectl describe challenge web-ssl-1-1178609210-1498826059
+ 2049  kubectl get challenge
+ 2050  kubectl get services
+ 2051  kubectl get services -n ingress
+ 2052  kubectl get services -n ingress-nginx
+ 2053  kubectl describe ingress
+ 2054  kubectl restert ingress
+ 2055  kubectl restart ingress
+ 2056  kubectl delete ingress
+ 2057  kubectl describe ingress
+ 2059  kubectl describe challenge web-ssl-1-1178609210-1498826059
+ 2063  history | grep kubectl >. kubectl_commands.txt
+ 2064  history | grep kubectl >> kubectl_commands.txt
