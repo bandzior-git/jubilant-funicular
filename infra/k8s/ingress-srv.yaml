@@ -24,7 +24,7 @@ spec:
             path: /
             backend:
               service:
-                name: nginx-srv
+                name: websajt-srv
                 port:
                   number: 80
 ---
