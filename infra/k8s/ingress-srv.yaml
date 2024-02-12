@@ -15,7 +15,7 @@ spec:
   tls:
     - hosts:
         - site.balcerski.eu
-      secretName: default/web-ssl-staging
+      secretName: web-ssl-staging
   ingressClassName: nginx
   rules:
     - http:
@@ -27,11 +27,3 @@ spec:
                 name: websajt-srv
                 port:
                   number: 80
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: nginx-ingress-controller
-  namespace: ingress-nginx
-data:
-  ssl-redirect: 'true'
