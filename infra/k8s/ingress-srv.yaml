@@ -18,7 +18,8 @@ spec:
       secretName: web-ssl-staging
   ingressClassName: nginx
   rules:
-    - http:
+    - host: site.balcerski.eu
+      http:
         paths:
           - pathType: Prefix
             path: /

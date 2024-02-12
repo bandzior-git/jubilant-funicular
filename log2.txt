@@ -1,0 +1,3 @@
+deployment.apps/cert-manager restarted
+deployment.apps/cert-manager-cainjector restarted
+deployment.apps/cert-manager-webhook restarted
