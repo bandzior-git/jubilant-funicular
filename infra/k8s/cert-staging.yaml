@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: tls
+  name: web-tls
 spec:
-  secretName: site-balcerski-eu
+  secretName: web-ssl-staging
   issuerRef:
-    name: lets-encrypt-test
+    name: lets-encrypt-staging
     kind: ClusterIssuer
   commonName: site-balcerski-eu
   dnsNames:
