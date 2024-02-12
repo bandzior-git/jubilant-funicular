@@ -31,4 +31,18 @@
 
 5. Deploy project using Github actions
 
-6.
+- all code is there
+
+6. It works, but without HTTPS. Let's check if we integrated with Let's Encrypt properly:
+
+- check if clusterissuer works ok
+  kubectl describe clusterissuer lets-encrypt-staging
+
+- if clusterissuer is ok, check certificate & certificate request
+  kubectl describe certificate web-ssl
+  kubectl get certificaterequests
+  kubectl describe certificaterequest web-ssl-1
+
+- check order and challenge
+  kubectl get orders
+  kubectl describe order web-ssl-1-1178609210
