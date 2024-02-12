@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: web-tls
+  name: web-ssl-staging
 spec:
   secretName: web-ssl-staging
   issuerRef:
