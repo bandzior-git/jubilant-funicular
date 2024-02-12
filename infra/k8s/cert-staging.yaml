@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: lets-encrypt-staging
     kind: ClusterIssuer
-  commonName: site-balcerski-eu
+  commonName: cert-staging
   dnsNames:
     - site.balcerski.eu
