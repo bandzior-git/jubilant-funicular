@@ -15,7 +15,7 @@ spec:
   tls:
     - hosts:
         - site.balcerski.eu
-      secretName: default/web-ssl-staging
+      secretName: web-ssl-staging
   ingressClassName: nginx
   rules:
     - http:
