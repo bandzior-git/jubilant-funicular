@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: lets-encrypt-prod
     kind: ClusterIssuer
-  commonName: balcerski-eu
+  commonName: site.balcerski.eu
   dnsNames:
     - site.balcerski.eu
