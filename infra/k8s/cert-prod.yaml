@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: web-ssl-prod
+spec:
+  secretName: web-ssl-prod
+  issuerRef:
+    name: lets-encrypt-prod
+    kind: ClusterIssuer
+  commonName: cert-prod
+  dnsNames:
+    - site.balcerski.eu

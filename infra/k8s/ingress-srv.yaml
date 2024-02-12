@@ -4,7 +4,7 @@ metadata:
   name: ingress-srv
   annotations:
     nginx.ingress.kubernetes.io/use-regex: 'true'
-    cert-manager.io/cluster-issuer: 'lets-encrypt-staging'
+    cert-manager.io/cluster-issuer: 'lets-encrypt-prod'
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
     # kubernetes.io/ingress.global-static-ip-name: web-ip
     # cert-manager.io/issue-temporary-certificate: 'true'
@@ -15,7 +15,7 @@ spec:
   tls:
     - hosts:
         - site.balcerski.eu
-      secretName: web-ssl-staging
+      secretName: web-ssl-prod
   ingressClassName: nginx
   rules:
     - host: site.balcerski.eu
